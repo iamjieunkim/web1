@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr; /*첫번째는 150픽셀크기로 갖고, 나머지를 두번째꺼 */
+      }
+      div{
+        border:5px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid"> <!--부모태그가 있어야지 두개의 태그를 묶어서 사용하기 위해 사용-->
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+  </body>
+</html>

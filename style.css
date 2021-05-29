@@ -1,0 +1,41 @@
+body{
+  margin:0;
+}
+  a{
+    color:black;
+    text-decoration: none;
+  }
+    h1{
+    font-size:60px;
+    text-align: center;
+    border-bottom:1px solid grey;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+     border-right:1px solid grey; /* ol은 전체를 지칭하는 것이기 때문에 선이 사이트 맨 끝 오른쪽에 있는 것이다.*/
+     width:100px; /*width값을 지정해서 ol태그의 범위를 지정해주는 것이다.*/
+     margin:0;
+     padding:20px;
+  }
+  #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+  }
+  #grid ol{ /*웹페이지에 있는 모든 ol중에 id가 grid인것을 스타일을 정해주겠다.*/
+    padding-left: 50px;
+  }
+  #grid #article{ /*그냥 #article만 써도 상관없음*/
+    padding-left: 35px;
+  }
+  @media(max-width:700px){
+    #grid{
+        display:block; /*grid인것을 block으로 바꿔줌으로써 자동으로 줄 바꿈 되게 정렬*/
+    }
+    ol{
+       border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+  }
